@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
+h1 {
+  font-weight: 700;
+  text-shadow: 0 0 2px var(--cyan);
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.card {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  padding: 2em 4em 2em 2em;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.top h1 {
+  color: var(--cyan);
+}
+
+.top p {
+  color: var(--grayish-blue);
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+.top h2.yellowish-text {
+  color: var(--brightYellow);
+  text-shadow: 0 0 2px var(--brightYellow);
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom > div {
+  flex: 1;
+}
+.left {
+  padding: 2em 3em;
+  background: var(--cyan);
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  /* width: 50%; */
+}
+
+.left > p {
+  display: flex;
+  align-items: center;
+}
+.left > p > span:first-child {
+  font-size: 2.5em;
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+}
+
+.left > p > span:last-child {
+  opacity: 0.6;
+}
+.left button {
+  width: 100%;
+  background: var(--brightYellow);
+  padding: 1.2em 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 6px 4px rgba(0, 0, 0, 0.15);
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: 700;
+  font-family: "karla", sans-serif;
+}
+
+.left p.full {
+  opacity: 0.8;
+  font-size: 1.2em;
+}
+
+.right {
+  padding: 2em;
+  padding-left: 3em;
+  background: var(--cyan);
+  opacity: 0.8;
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  /* width: 50%; */
+}
+.right ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.right ul li {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: var(--light-gray);
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  .top p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  .card {
+    width: 90%;
+    margin: 4em 0;
+  }
+  .top {
+    padding: 2em;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .left {
+    border-radius: 0;
+    padding: 2em;
+  }
+  .right {
+    padding: 2em;
+    border-bottom-left-radius: 10px;
+  }
+}
