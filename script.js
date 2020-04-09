@@ -5,7 +5,10 @@ const projects = [
   {
     name: "intro-component-with-signup-form-master"
   },
-  { name: "single-price-grid-component-master" }
+  { name: "single-price-grid-component-master" },
+  {
+    name: "ping-coming-soon-page-master"
+  }
 ];
 
 const container = document.querySelector(".flex");
