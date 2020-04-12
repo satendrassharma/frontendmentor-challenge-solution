@@ -8,6 +8,9 @@ const projects = [
   { name: "single-price-grid-component-master" },
   {
     name: "ping-coming-soon-page-master"
+  },
+  {
+    name: "huddle-landing-page-with-single-introductory-section-master"
   }
 ];
 

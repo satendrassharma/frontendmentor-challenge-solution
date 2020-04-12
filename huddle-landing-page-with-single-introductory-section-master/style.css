@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-image: url("./images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 20%;
+  background-color: hsl(257, 40%, 49%);
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding-right: 20px;
+  line-height: 1.4;
+}
+
+p {
+  opacity: 0.6;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 1em 4em;
+  color: hsl(257, 40%, 49%);
+  background: #fff;
+  box-shadow: 1px 3px 5px 2px hsl(257, 38%, 31%);
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  margin-top: 2em;
+  display: flex;
+}
+
+.logo img {
+  width: 15%;
+  margin-top: 1em;
+}
+
+.left {
+  margin-right: 20px;
+  flex-basis: 55%;
+  /* flex: 1.4; */
+}
+
+.right {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 2em;
+  /* flex: 1; */
+  flex-basis: 38%;
+}
+
+.social {
+  text-align: right;
+  margin-right: 20px;
+}
+.social a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  color: white;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .container {
+    padding: 2em 3em;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .left {
+    margin: 2em 0;
+  }
+  .right {
+    margin-left: 0;
+    text-align: center;
+    /* padding: 0 4em; */
+  }
+  .right p {
+    /* padding: 0 4.5em; */
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  button {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .social {
+    text-align: center;
+    margin-top: 5em;
+    margin-right: 0;
+  }
+}
