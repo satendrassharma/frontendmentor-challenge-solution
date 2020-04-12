@@ -65,14 +65,12 @@ button:hover {
 .left {
   margin-right: 20px;
   flex-basis: 55%;
-  /* flex: 1.4; */
 }
 
 .right {
   color: #fff;
   margin-left: 20px;
   margin-top: 2em;
-  /* flex: 1; */
   flex-basis: 38%;
 }
 
@@ -111,11 +109,8 @@ button:hover {
   .right {
     margin-left: 0;
     text-align: center;
-    /* padding: 0 4em; */
   }
-  .right p {
-    /* padding: 0 4.5em; */
-  }
+
   h1 {
     font-size: 1.8em;
   }
