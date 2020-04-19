@@ -11,6 +11,9 @@ const projects = [
   },
   {
     name: "huddle-landing-page-with-single-introductory-section-master"
+  },
+  {
+    name: "insure-landing-page-master"
   }
 ];
 
