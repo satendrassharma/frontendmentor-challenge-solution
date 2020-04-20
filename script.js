@@ -14,6 +14,9 @@ const projects = [
   },
   {
     name: "insure-landing-page-master"
+  },
+  {
+    name: "pricing-component-with-toggle-master"
   }
 ];
 

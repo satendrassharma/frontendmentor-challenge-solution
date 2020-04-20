@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | pricing component with toggle master</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Our Pricing
+      </h2>
+
+      <div class="price-toggle">
+        <p>
+          Annually
+        </p>
+        <input type="checkbox" name="toggle" id="toggle" />
+        <label for="toggle">
+          <div class="ball"></div>
+        </label>
+        <p>Monthly</p>
+      </div>
+
+      <div id="prices" class="flex ">
+        <div class="price-box">
+          <p>
+            Basic
+          </p>
+          <p class="price">
+            <span class="anually">
+              <span class="doller">&dollar;</span>199.99
+            </span>
+            <span class="monthly">
+              <span class="doller">&dollar;</span>19.99
+            </span>
+          </p>
+          <ul>
+            <li>
+              500 GB Storage
+            </li>
+            <li>
+              2 Users Allowed
+            </li>
+            <li>
+              Send up to 3 GB
+            </li>
+          </ul>
+          <button class="btn">
+            Learn More
+          </button>
+        </div>
+        <div class="price-box  price-box-premier">
+          <p>
+            Professional
+          </p>
+          <p class="price">
+            <span class="anually">
+              <span class="doller">&dollar;</span>249.99
+            </span>
+            <span class="monthly">
+              <span class="doller">&dollar;</span>24.99
+            </span>
+          </p>
+          <ul>
+            <li>
+              1 TB Storage
+            </li>
+            <li>
+              5 Users Allowed
+            </li>
+            <li>
+              Send up to 10 GB
+            </li>
+          </ul>
+          <button class="btn">
+            Learn More
+          </button>
+        </div>
+        <div class="price-box">
+          <p>
+            Master
+          </p>
+          <p class="price">
+            <span class="anually">
+              <span class="doller">&dollar;</span>299.99
+            </span>
+            <span class="monthly">
+              <span class="doller">&dollar;</span>39.99
+            </span>
+          </p>
+          <ul>
+            <li>
+              2 TB Storage
+            </li>
+            <li>
+              10 Users Allowed
+            </li>
+            <li>
+              Send up to 20 GB
+            </li>
+          </ul>
+          <button class="btn">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
